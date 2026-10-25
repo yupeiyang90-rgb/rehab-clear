@@ -1,6 +1,6 @@
 window.REHAB_DATA = {
-  "version": "3.0",
-  "updated": "2026-10-14",
+  "version": "3.1",
+  "updated": "2026-10-25",
   "sources": {
     "who": {
       "title": "WHO：康复概况",
@@ -121,6 +121,46 @@ window.REHAB_DATA = {
     "iddsi": {
       "title": "IDDSI：食物质地与液体稠度框架",
       "url": "https://www.iddsi.org/resources/framework-documents"
+    },
+    "icf": {
+      "title": "WHO：国际功能、残疾和健康分类",
+      "url": "https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health"
+    },
+    "nhc_rehab": {
+      "title": "国家卫生健康部门：综合医院康复医学科建设与管理指南",
+      "url": "https://www.nhc.gov.cn/zwgkzt/pyzgl1/201105/51579.shtml"
+    },
+    "asha_aos": {
+      "title": "ASHA：获得性言语失用症",
+      "url": "https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/"
+    },
+    "asha_vfss": {
+      "title": "ASHA：视频透视吞咽检查",
+      "url": "https://www.asha.org/practice-portal/resources/videofluoroscopic-swallow-study/"
+    },
+    "fda_spo2": {
+      "title": "FDA：脉搏血氧仪的含义与局限",
+      "url": "https://www.fda.gov/consumers/consumer-updates/pulse-oximeters-and-oxygen-concentrators-what-know-about-home-oxygen-therapy"
+    },
+    "asia": {
+      "title": "ASIA：脊髓损伤神经学分类国际标准",
+      "url": "https://asia-spinalinjury.org/isncsci-resources/"
+    },
+    "iasp": {
+      "title": "IASP：疼痛术语",
+      "url": "https://www.iasp-pain.org/resources/terminology/"
+    },
+    "tug": {
+      "title": "Shirley Ryan AbilityLab：起立行走计时测试",
+      "url": "https://www.sralab.org/rehabilitation-measures/timed-and-go"
+    },
+    "berg": {
+      "title": "Shirley Ryan AbilityLab：Berg平衡量表",
+      "url": "https://www.sralab.org/rehabilitation-measures/berg-balance-scale"
+    },
+    "fim": {
+      "title": "Shirley Ryan AbilityLab：功能独立性评定",
+      "url": "https://www.sralab.org/rehabilitation-measures/functional-independence-measure"
     }
   },
   "categories": [
@@ -144,12 +184,13 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "康复医学",
       "english": "Physical and rehabilitation medicine / PRM",
-      "definition": "关注疾病或损伤对功能和生活的影响，通过评估、治疗、训练与环境调整帮助人更好地生活。康复可与疾病治疗同时进行。",
+      "definition": "以功能障碍的预防、评定和治疗为主要任务的医学学科，关注身体功能与结构、活动能力及社会参与。康复医师与治疗师、护士等共同开展诊疗，康复可与疾病治疗同时进行。",
       "keywords": [
         "康复科",
         "康复治疗"
       ],
       "sources": [
+        "nhc_rehab",
         "who"
       ]
     },
@@ -158,29 +199,25 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "功能",
       "english": "Functioning",
-      "definition": "包括身体功能、完成活动的能力和参与生活的情况。功能改善不只体现为肌肉力量增加，也包括更独立地生活。",
+      "definition": "在ICF框架中，功能是身体功能、身体结构、活动与参与的统称。评定时既要看身体状况，也要看个人在实际环境中完成任务和参与生活的情况。",
       "keywords": [
         "功能恢复"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "icf"
       ]
     },
     {
       "id": "t003",
       "category": "基础康复",
       "name": "功能障碍",
-      "english": "Functional impairment",
-      "definition": "身体功能、活动或参与受到限制的状态。它描述具体困难，并不直接说明病因或恢复程度。",
+      "english": "Impairment / activity limitation / participation restriction",
+      "definition": "康复临床中对功能受损状态的概括性用语。具体记录应区分身体功能或结构损伤、活动受限和参与局限；英文impairment仅指前一层面，不能覆盖全部功能障碍。",
       "keywords": [
         "功能受限"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "icf"
       ]
     },
     {
@@ -193,9 +230,7 @@ window.REHAB_DATA = {
         "活动能力"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "icf"
       ]
     },
     {
@@ -208,24 +243,20 @@ window.REHAB_DATA = {
         "社会参与"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "icf"
       ]
     },
     {
       "id": "t006",
       "category": "基础康复",
       "name": "国际功能、残疾和健康分类",
-      "english": "ICF",
-      "definition": "世界卫生组织用于描述功能、残疾和环境因素的分类框架。不是给个人判定病情严重程度的单一评分。",
+      "english": "International Classification of Functioning, Disability and Health / ICF",
+      "definition": "世界卫生组织建立的功能与健康分类框架，涵盖身体功能与结构、活动和参与，并考虑环境因素的影响。用于组织和描述功能状况，不是单一诊断或病情评分量表。",
       "keywords": [
         "ICF框架"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "icf"
       ]
     },
     {
@@ -233,14 +264,13 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "康复评定",
       "english": "Rehabilitation assessment",
-      "definition": "通过询问、观察、检查和量表了解当前功能、困难与需求，为制定目标和方案提供依据。",
+      "definition": "采用病史采集、体格检查、功能测试和量表等方法，识别功能障碍、活动受限与参与局限，并了解康复需求。结果用于制定目标、选择干预及评价变化。",
       "keywords": [
         "康复评估"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "nhc_rehab",
+        "icf"
       ]
     },
     {
@@ -278,15 +308,13 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "多学科团队",
       "english": "Multidisciplinary team / MDT",
-      "definition": "不同专业共同参与服务，可包括医师、护士、治疗师等。具体分工取决于机构与患者需求。",
+      "definition": "由康复医师、护士、物理治疗师、作业治疗师、言语治疗相关人员等不同专业组成的服务团队。各专业在职责范围内评估与干预，协商患者目标和照护安排。",
       "keywords": [
         "团队",
         "MDT"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "nhc_rehab"
       ]
     },
     {
@@ -294,12 +322,13 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "物理治疗",
       "english": "Physiotherapy / PT",
-      "definition": "运用运动、教育、手法及适当物理因子等处理活动和功能问题。不能简单等同于机器理疗或按摩。",
+      "definition": "通过运动治疗、手法治疗、物理因子治疗及健康教育等方法，预防或减轻功能障碍，改善运动与活动能力。运动治疗是其中的重要部分，物理治疗不等于单纯仪器理疗。",
       "keywords": [
         "PT",
         "运动治疗"
       ],
       "sources": [
+        "nhc_rehab",
         "pt"
       ]
     },
@@ -308,14 +337,15 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "作业治疗",
       "english": "Occupational therapy / OT",
-      "definition": "围绕有意义的日常活动，帮助改善完成任务的能力，也可调整任务方式与环境。这里的作业不是学校作业。",
+      "definition": "以患者需要、希望或应当完成的日常作业活动为目标，通过活动分析与训练、辅助器具适配以及任务和环境调整，促进自理、学习、工作和社会参与。例如针对穿衣困难分析手部功能、扣纽扣方法与衣物设计。",
       "keywords": [
         "OT",
         "穿衣",
         "扣扣子"
       ],
       "sources": [
-        "ot"
+        "ot",
+        "nhc_rehab"
       ]
     },
     {
@@ -323,16 +353,15 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "言语语言治疗",
       "english": "Speech-language therapy / SLT",
-      "definition": "评估和处理言语、语言及相关沟通问题；在相应专业范围内也涉及吞咽服务。",
+      "definition": "针对言语、语言及沟通障碍开展评估和干预的专业服务。言语涉及发声、构音和韵律等，语言涉及理解与表达；吞咽服务由具备相应专业能力的人员按岗位职责开展。",
       "keywords": [
         "ST",
         "SLT",
         "言语治疗"
       ],
       "sources": [
-        "who",
-        "pt",
-        "ot"
+        "dysarthria",
+        "dysphagia"
       ]
     },
     {
@@ -401,7 +430,7 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "name": "辅助技术",
       "english": "Assistive technology",
-      "definition": "用于支持活动和参与的产品、服务或技术，如助行器、沟通设备。应考虑适配和实际使用能力。",
+      "definition": "用于维持或改善功能与独立性的一系列辅助产品及其相关服务、系统和知识。包括助行器、轮椅和沟通设备等；辅助产品需要评估、适配、使用训练和随访。",
       "keywords": [
         "辅助产品"
       ],
@@ -476,7 +505,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "name": "肌张力",
       "english": "Muscle tone",
-      "definition": "肌肉在静息时的张力及被动活动时表现的阻力。张力高不代表力量强，需要区分神经与软组织因素。",
+      "definition": "临床上常通过肌肉在静息状态下的紧张程度以及被动活动时的阻力进行评估。被动阻力受神经调节和肌肉、肌腱等组织特性共同影响，不能将肌张力增高等同于肌力增强。",
       "keywords": [
         "紧",
         "僵硬"
@@ -491,7 +520,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "name": "痉挛",
       "english": "Spasticity",
-      "definition": "上运动神经元损伤后的一种表现，典型特点是被动牵伸速度越快，阻力越明显。并非所有僵硬都是痉挛。",
+      "definition": "上运动神经元综合征的组成表现之一，以速度依赖性的牵张反射增强为主要特征，常伴腱反射亢进。快速被动牵伸时阻力可能更明显；僵硬或被动阻力增加不一定都是痉挛。",
       "keywords": [
         "肌肉痉挛"
       ],
@@ -632,10 +661,15 @@ window.REHAB_DATA = {
       "id": "t034",
       "category": "运动功能",
       "name": "重心",
-      "english": "Centre of mass",
-      "definition": "身体质量分布的中心。重心相对支撑面的变化会影响稳定，但平衡并非仅由重心位置决定。",
+      "english": "Centre of gravity / COG",
+      "definition": "重力作用于身体的等效作用点。在地表近似均匀重力场中，重心与质心可近似重合。其位置随姿势改变，与支撑面的相对关系是影响平衡的因素之一。",
       "keywords": [
-        "身体重心"
+        "重心",
+        "Centre of mass",
+        "身体重心",
+        "质心",
+        "centre of mass",
+        "COM"
       ],
       "sources": [
         "pt",
@@ -647,7 +681,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "name": "支撑面",
       "english": "Base of support",
-      "definition": "身体与支撑物接触点围成的区域，例如双脚之间的范围。范围变化可改变平衡要求。",
+      "definition": "身体与支撑物接触点所围成的区域，双足站立时包括足底接触区及两足之间的区域。使用手杖等支撑物可改变有效支撑范围，稳定性还受姿势和动态控制影响。",
       "keywords": [
         "支撑基础"
       ],
@@ -717,7 +751,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "name": "足下垂",
       "english": "Foot drop",
-      "definition": "抬起前脚掌的能力不足，走路时可能拖地。可由不同神经或肌肉问题引起，需评估原因。",
+      "definition": "踝关节主动背屈不足，导致足尖在步行摆动期难以离地的表现。可与周围神经病变或中枢神经损伤等有关；拖脚也可能由髋、膝控制等其他问题造成。",
       "keywords": [
         "脚抬不起来",
         "拖脚"
@@ -746,8 +780,8 @@ window.REHAB_DATA = {
       "id": "t042",
       "category": "神经康复",
       "name": "脑梗死",
-      "english": "Ischaemic stroke",
-      "definition": "脑血管阻塞导致部分脑组织缺血损伤。它是卒中的一种类型，不能与脑出血混为一谈。",
+      "english": "Cerebral infarction",
+      "definition": "局部脑组织因缺血而发生梗死。脑梗死是缺血性卒中的病理基础，但缺血性卒中强调临床卒中事件，两者在所有语境下并非完全等同。不能与脑出血混用。",
       "keywords": [
         "脑梗",
         "缺血性卒中"
@@ -778,7 +812,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "短暂性脑缺血发作",
       "english": "Transient ischaemic attack / TIA",
-      "definition": "短暂的局灶神经功能障碍通常与缺血有关，症状消失也不代表没有风险，仍需及时医学评估。",
+      "definition": "脑、脊髓或视网膜局灶性缺血引起的短暂神经功能障碍，且无急性梗死证据。症状缓解仍需紧急评估；不能仅凭持续时间短就排除卒中。",
       "keywords": [
         "TIA",
         "小中风"
@@ -794,7 +828,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "偏瘫",
       "english": "Hemiplegia",
-      "definition": "身体一侧出现严重的运动能力丧失。常与脑损伤有关，具体涉及哪些部位和功能因人而异。",
+      "definition": "身体一侧肢体随意运动功能丧失的表现，常见于对侧大脑半球等部位损伤。临床还需记录残存运动、肌力、肌张力和伴随障碍，不能仅以是否能行走判断。",
       "keywords": [
         "半边不能动"
       ],
@@ -807,11 +841,15 @@ window.REHAB_DATA = {
     {
       "id": "t046",
       "category": "神经康复",
-      "name": "轻偏瘫",
+      "name": "不完全性偏瘫",
       "english": "Hemiparesis",
-      "definition": "身体一侧力量或运动控制减弱，仍保留部分活动能力。不能仅凭是否能走路判断程度。",
+      "definition": "身体一侧肢体肌力减弱或部分运动功能受损，仍保留一定随意运动。与完全运动丧失不同，但并不意味着总体病情轻，也不能只按是否能走路判断。",
       "keywords": [
-        "半边无力"
+        "轻偏瘫",
+        "Hemiparesis",
+        "半边无力",
+        "偏侧无力",
+        "轻偏瘫"
       ],
       "sources": [
         "stroke",
@@ -824,14 +862,12 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "截瘫",
       "english": "Paraplegia",
-      "definition": "双下肢及相关躯干功能受到影响的瘫痪状态，常见于脊髓损伤，受损范围与病变位置有关。",
+      "definition": "脊髓损伤语境中，胸、腰或骶段神经组织损伤导致双下肢运动和／或感觉功能受损，上肢功能保留。躯干及盆腔脏器功能也可能受影响，范围取决于神经损伤平面和完整性。",
       "keywords": [
         "双腿瘫痪"
       ],
       "sources": [
-        "stroke",
-        "sci",
-        "neuro"
+        "asia"
       ]
     },
     {
@@ -839,14 +875,12 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "四肢瘫",
       "english": "Tetraplegia",
-      "definition": "上肢、下肢及躯干等功能均受影响的瘫痪状态，常与颈段脊髓损伤相关。",
+      "definition": "脊髓损伤语境中，颈段神经组织损伤导致双上肢、躯干、双下肢及盆腔器官相关运动和／或感觉功能受损。不同损伤平面与完整性下，保留功能差异很大。",
       "keywords": [
         "四肢不能动"
       ],
       "sources": [
-        "stroke",
-        "sci",
-        "neuro"
+        "asia"
       ]
     },
     {
@@ -895,7 +929,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "下运动神经元",
       "english": "Lower motor neuron / LMN",
-      "definition": "直接或经周围神经支配骨骼肌的运动神经元。损伤可导致肌无力、萎缩等表现。",
+      "definition": "胞体位于脊髓前角或脑干运动神经核、轴突直接支配骨骼肌的运动神经元。损伤可出现肌力减弱、肌萎缩、肌张力降低和腱反射减弱等表现。",
       "keywords": [
         "LMN"
       ],
@@ -1018,7 +1052,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "失用",
       "english": "Apraxia",
-      "definition": "不能用基础肌力或理解障碍完全解释的熟练动作执行困难。具体类型需通过专业评估判断。",
+      "definition": "已经习得的、有目的动作的计划或执行受损，且不能用肌无力、感觉缺失、共济失调或指令理解困难等充分解释。应结合动作类型与神经心理评估判断。",
       "keywords": [
         "不会用物品"
       ],
@@ -1304,14 +1338,12 @@ window.REHAB_DATA = {
       "category": "骨关节与疼痛",
       "name": "神经病理性疼痛",
       "english": "Neuropathic pain",
-      "definition": "由躯体感觉神经系统病变或损伤引起的疼痛，可表现为烧灼或电击样感觉。性质描述不能单独确诊。",
+      "definition": "由躯体感觉神经系统的损伤或疾病引起的疼痛，可表现为烧灼、电击样痛或触诱发痛。疼痛形容词本身不足以确诊，还需与神经病变的证据和分布相符。",
       "keywords": [
         "神经痛"
       ],
       "sources": [
-        "msk",
-        "oa",
-        "back"
+        "iasp"
       ]
     },
     {
@@ -1319,14 +1351,12 @@ window.REHAB_DATA = {
       "category": "骨关节与疼痛",
       "name": "慢性疼痛",
       "english": "Chronic pain",
-      "definition": "通常指持续或反复超过三个月的疼痛。它可能涉及多种生物、心理和社会因素，不等于装病。",
+      "definition": "持续或反复超过三个月的疼痛。可分为不同病因和机制类型，常需同时考虑生物、心理与社会因素；持续疼痛不必然表示组织损伤仍在加重。",
       "keywords": [
         "长期疼痛"
       ],
       "sources": [
-        "msk",
-        "oa",
-        "back"
+        "iasp"
       ]
     },
     {
@@ -1334,7 +1364,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "日常生活活动",
       "english": "Activities of daily living / ADL",
-      "definition": "维持基本生活的活动，如进食、穿衣、如厕。评估需说明是否独立、是否使用器具及需要多少帮助。",
+      "definition": "个人维持日常生活所需的活动。临床常将进食、穿衣、洗漱、如厕及转移等归入基本日常生活活动；应记录独立程度、辅助器具和所需帮助。",
       "keywords": [
         "ADL",
         "自理"
@@ -1348,8 +1378,8 @@ window.REHAB_DATA = {
       "id": "t082",
       "category": "日常活动与辅具",
       "name": "工具性日常生活活动",
-      "english": "Instrumental ADL / IADL",
-      "definition": "较复杂的独立生活活动，如购物、做饭和管理事务。基本自理良好不代表这些活动均无困难。",
+      "english": "Instrumental activities of daily living / IADL",
+      "definition": "支持独立居家与社区生活的较复杂活动，如购物、备餐、使用交通工具和管理药物或财务。与基本自理活动相比，更依赖认知、组织能力和环境支持。",
       "keywords": [
         "IADL"
       ],
@@ -1363,7 +1393,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "转移",
       "english": "Transfer",
-      "definition": "在床、椅子、轮椅或厕所等位置之间移动身体。转移需要考虑力量、平衡、环境与帮助方式。",
+      "definition": "身体由一个支撑面或位置移动到另一个的功能性活动，如床与轮椅之间转移、坐上坐便器。需要评估负重限制、运动和平衡能力及所需辅助，不等同于步行。",
       "keywords": [
         "床椅转移"
       ],
@@ -1477,7 +1507,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "腋拐",
       "english": "Axillary crutch",
-      "definition": "在上肢和身体侧方提供支撑的拐杖。正确适配与使用可减少局部受压及跌倒风险。",
+      "definition": "以手柄、前臂和上臂配合提供支撑的步行辅助器具。使用时体重主要通过手柄由上肢承受，不应将体重持续压在腋窝托垫上；高度和步态需专业适配。",
       "keywords": [
         "双拐"
       ],
@@ -1519,7 +1549,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "矫形器",
       "english": "Orthosis",
-      "definition": "用于支持、保护或调整身体部位位置和运动的装置。它不是用来替代缺失肢体的假肢。",
+      "definition": "外加于身体、用于改变神经肌肉骨骼系统结构或功能特性的装置，临床也称支具。可用于支持、保护、限制或辅助运动，与替代缺失肢体的假肢不同。",
       "keywords": [
         "支具"
       ],
@@ -1548,7 +1578,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "假肢",
       "english": "Prosthesis",
-      "definition": "替代缺失肢体或部分结构的装置。使用包括适配、训练和残肢皮肤管理。",
+      "definition": "用于替代缺失肢体全部或部分结构与功能的人工装置。康复中需进行残肢评估、假肢适配、使用训练和皮肤管理。",
       "keywords": [
         "义肢"
       ],
@@ -1562,8 +1592,10 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "name": "压力性损伤",
       "english": "Pressure injury",
-      "definition": "压力或压力与剪切共同作用导致的皮肤和深部组织损伤。风险与活动、感觉、营养及皮肤状况有关。",
+      "definition": "压力或压力合并剪切力所致的皮肤及／或深部软组织局部损伤，常发生于骨隆突或医疗器械接触部位。可在皮肤完整时出现，并非必须已经破溃；旧称压疮。",
       "keywords": [
+        "压疮",
+        "褥疮",
         "压疮",
         "褥疮"
       ],
@@ -1589,10 +1621,12 @@ window.REHAB_DATA = {
     {
       "id": "t099",
       "category": "日常活动与辅具",
-      "name": "节能策略",
+      "name": "能量保存策略",
       "english": "Energy conservation",
-      "definition": "通过安排任务、休息和改变活动方式管理体力消耗。不是长期停止活动，而是提高活动的可持续性。",
+      "definition": "通过任务分解、活动节奏安排、交替活动与休息、简化动作及使用辅助器具等方式，降低日常活动的能量需求，帮助管理疲劳。不是长期停止活动。",
       "keywords": [
+        "节能策略",
+        "Energy conservation",
         "省力",
         "体力分配"
       ],
@@ -1634,7 +1668,7 @@ window.REHAB_DATA = {
       "category": "言语与沟通",
       "name": "构音障碍",
       "english": "Dysarthria",
-      "definition": "控制发声和说话肌肉的神经运动功能受损，导致清晰度等改变。它与语言组织困难的失语不同。",
+      "definition": "神经系统损伤导致言语运动控制异常的一组障碍，可影响呼吸、发声、共鸣、构音及韵律，降低言语清晰度或自然度。语言理解与表达是否受损需另行评估。",
       "keywords": [
         "口齿不清"
       ],
@@ -1645,15 +1679,16 @@ window.REHAB_DATA = {
     {
       "id": "t103",
       "category": "言语与沟通",
-      "name": "言语失用",
+      "name": "言语失用症",
       "english": "Apraxia of speech / AOS",
-      "definition": "言语动作计划或编程受到影响，发音可能费力或出现不一致错误。不能仅由肌无力解释。",
+      "definition": "脑损伤后言语动作计划或编程受损，影响语音动作的组织与排序。发音可费力或出现错误，不能仅用肌无力或构音器官结构异常解释，可与失语症或构音障碍并存。",
       "keywords": [
+        "言语失用",
+        "Apraxia of speech / AOS",
         "AOS"
       ],
       "sources": [
-        "aphasia",
-        "dysarthria"
+        "asha_aos"
       ]
     },
     {
@@ -1731,7 +1766,7 @@ window.REHAB_DATA = {
       "category": "言语与沟通",
       "name": "发声",
       "english": "Phonation",
-      "definition": "声带等结构产生声音的过程。音量、音质变化可与多种原因有关，需要合适的评估。",
+      "definition": "声带振动产生声音的过程。发声障碍可影响音质、音高、音量或发声耐力，需结合喉部结构、运动与呼吸支持等进行评估。",
       "keywords": [
         "声音"
       ],
@@ -1843,14 +1878,13 @@ window.REHAB_DATA = {
       "category": "言语与沟通",
       "name": "辅助与替代沟通",
       "english": "Augmentative and alternative communication / AAC",
-      "definition": "利用手势、图片、文字或设备支持表达与理解。使用辅助沟通并不意味着放弃语言训练。",
+      "definition": "用于补充或替代自然言语和书写的沟通方式，包括手势、图片、文字板及电子设备。沟通方式需结合理解、表达、视听觉和运动能力选择。",
       "keywords": [
         "AAC",
         "沟通板"
       ],
       "sources": [
-        "aphasia",
-        "dysarthria"
+        "aphasia"
       ]
     },
     {
@@ -1870,10 +1904,12 @@ window.REHAB_DATA = {
     {
       "id": "t119",
       "category": "言语与沟通",
-      "name": "可懂度",
-      "english": "Intelligibility",
-      "definition": "听者能理解说话者言语内容的程度，受发音、音量、速度和情境影响。",
+      "name": "言语可懂度",
+      "english": "Speech intelligibility",
+      "definition": "听者能够准确辨认说话内容的程度，是言语功能评估的一项指标。受构音、嗓音、语速、听者熟悉程度和语境等因素影响。",
       "keywords": [
+        "可懂度",
+        "Intelligibility",
         "说话清晰度"
       ],
       "sources": [
@@ -1900,13 +1936,12 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "吞咽障碍",
       "english": "Dysphagia",
-      "definition": "食物、液体或唾液从口腔向胃转运的过程发生困难。可能影响安全和营养，需明确受影响环节。",
+      "definition": "食物、液体或唾液从口腔经咽、食管向胃转运的过程发生障碍，可涉及口腔期、咽期或食管期。评估需同时关注吞咽安全性、有效性以及营养和水分摄入。",
       "keywords": [
         "吞咽困难"
       ],
       "sources": [
-        "dysphagia",
-        "nutrition"
+        "dysphagia"
       ]
     },
     {
@@ -1970,13 +2005,13 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "误吸",
       "english": "Aspiration",
-      "definition": "食物、液体或分泌物进入声带以下气道。可有咳嗽，也可没有明显外在表现。",
+      "definition": "食物、液体、分泌物等进入真声带平面以下气道。可发生于吞咽前、吞咽中或吞咽后；是否咳嗽不能单独判断有无误吸。",
       "keywords": [
         "进入气管"
       ],
       "sources": [
         "dysphagia",
-        "nutrition"
+        "asha_vfss"
       ]
     },
     {
@@ -1984,14 +2019,16 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "喉前庭侵入",
       "english": "Laryngeal penetration",
-      "definition": "物质进入喉部气道但未越过声带，和声带以下的误吸不同。需通过合适检查识别。",
+      "definition": "食物、液体或分泌物进入喉前庭，但未越过真声带平面。与进入声带以下气道的误吸不同，通常需借助吞咽造影或内镜检查识别。",
       "keywords": [
         "渗入",
-        "喉侵入"
+        "喉侵入",
+        "喉渗透",
+        "喉渗入"
       ],
       "sources": [
         "dysphagia",
-        "nutrition"
+        "asha_vfss"
       ]
     },
     {
@@ -1999,13 +2036,12 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "隐性误吸",
       "english": "Silent aspiration",
-      "definition": "发生误吸却没有明显咳嗽等反应。没有呛咳不能证明吞咽一定安全。",
+      "definition": "发生误吸时缺乏咳嗽等明显保护性反应。不能仅凭没有呛咳排除误吸，是否需要仪器检查由临床评估决定。",
       "keywords": [
         "静默误吸"
       ],
       "sources": [
-        "dysphagia",
-        "nutrition"
+        "dysphagia"
       ]
     },
     {
@@ -2027,42 +2063,43 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "吞咽筛查",
       "english": "Swallow screening",
-      "definition": "快速识别吞咽风险的程序，目的是决定是否需进一步评估，并非完整诊断。",
+      "definition": "用标准化程序快速识别可能存在吞咽障碍或误吸风险的人群，以决定是否暂停相关经口摄入并转介进一步评估。筛查不能替代完整吞咽评估，不建议自行开展饮水试验。",
       "keywords": [
         "筛查"
       ],
       "sources": [
-        "dysphagia",
-        "nutrition"
+        "dysphagia"
       ]
     },
     {
       "id": "t131",
       "category": "吞咽与营养",
-      "name": "吞咽造影检查",
-      "english": "Videofluoroscopic swallow study / VFSS",
-      "definition": "使用动态X线观察含造影剂食团的吞咽过程，可评估运动与气道相关问题。",
+      "name": "视频透视吞咽检查",
+      "english": "Videofluoroscopic swallowing study / VFSS",
+      "definition": "又称视频透视吞咽检查，使用动态X线观察含造影剂食团在口腔、咽部及可见食管段的转运，评估吞咽生理、残留及气道侵入情况，并可检验适当的代偿策略。",
       "keywords": [
+        "吞咽造影检查",
+        "Videofluoroscopic swallow study / VFSS",
         "VFSS",
         "吞咽造影"
       ],
       "sources": [
-        "dysphagia",
-        "nutrition"
+        "asha_vfss"
       ]
     },
     {
       "id": "t132",
       "category": "吞咽与营养",
-      "name": "纤维内镜吞咽检查",
+      "name": "纤维内镜吞咽功能检查",
       "english": "Flexible endoscopic evaluation of swallowing / FEES",
-      "definition": "通过经鼻内镜观察咽喉、分泌物及吞咽相关表现。与吞咽造影提供的信息有所不同。",
+      "definition": "经鼻置入软性内镜，观察咽喉解剖、分泌物、食物残留及气道保护相关表现。不能像X线透视一样连续观察全部吞咽阶段，与吞咽造影互为补充。",
       "keywords": [
+        "纤维内镜吞咽检查",
+        "Flexible endoscopic evaluation of swallowing / FEES",
         "FEES"
       ],
       "sources": [
-        "dysphagia",
-        "nutrition"
+        "dysphagia"
       ]
     },
     {
@@ -2099,7 +2136,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "IDDSI框架",
       "english": "International Dysphagia Diet Standardisation Initiative",
-      "definition": "描述食物质地和液体稠度的标准化框架。等级是特性分类，不是病情严重度或疗效评分。",
+      "definition": "国际吞咽障碍饮食标准化倡议提出的食物质地与液体稠度分类及测试框架，共设0至7级，其中液体与食物的适用等级范围不同。分级不是患者病情或疗效评分，需按标准方法测试。",
       "keywords": [
         "IDDSI"
       ],
@@ -2139,7 +2176,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "肠内营养",
       "english": "Enteral nutrition",
-      "definition": "经胃肠道提供营养，可包括通过管道输送。是否适用与方式需由医疗团队决定。",
+      "definition": "经胃肠道提供营养支持的方式，临床可采用口服营养补充或管饲，具体用法取决于所采用的临床定义与方案。鼻胃管、胃造瘘等管饲路径应由医疗团队评估选择。",
       "keywords": [
         "管饲"
       ],
@@ -2336,7 +2373,7 @@ window.REHAB_DATA = {
       "category": "认知与心理",
       "name": "病识感",
       "english": "Awareness of deficits",
-      "definition": "认识自身困难及其影响的能力。病识感不足可能影响安全和康复参与。",
+      "definition": "在神经康复中常指患者对自身功能障碍及其影响的认识，又称缺损意识。认识受损可影响安全判断与康复参与；不能仅据拒绝训练判断为缺乏病识感。",
       "keywords": [
         "认识问题"
       ],
@@ -2391,7 +2428,7 @@ window.REHAB_DATA = {
       "category": "认知与心理",
       "name": "痴呆",
       "english": "Dementia",
-      "definition": "认知下降影响独立生活的一组临床表现，有多种病因。不是正常老化的必然结果。",
+      "definition": "由多种脑部疾病引起的临床综合征，表现为较既往下降的认知能力，并影响独立生活。应与谵妄、抑郁及其他可影响认知表现的因素鉴别，不是正常老化的必然结果。",
       "keywords": [
         "认知症"
       ],
@@ -2476,7 +2513,7 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "name": "肺康复",
       "english": "Pulmonary rehabilitation",
-      "definition": "针对慢性呼吸问题的综合运动与教育项目，关注活动能力、症状和生活质量。需结合病情评估。",
+      "definition": "基于全面评估、为有适应证的慢性呼吸疾病患者制定的综合干预，通常包括个体化运动训练、教育和行为改变，旨在改善症状、运动能力及健康相关生活质量。",
       "keywords": [
         "呼吸康复"
       ],
@@ -2588,16 +2625,20 @@ window.REHAB_DATA = {
     {
       "id": "t170",
       "category": "心肺与运动",
-      "name": "血氧饱和度",
-      "english": "Oxygen saturation / SpO2",
-      "definition": "指尖仪器估测血液氧合的一项指标。运动、末梢循环和设备误差可影响读数，不能代替全部呼吸评估。",
+      "name": "脉搏血氧饱和度",
+      "english": "Peripheral oxygen saturation / SpO₂",
+      "definition": "脉搏血氧仪经皮无创估计的动脉血氧饱和度，以百分比显示。与动脉血气测得的SaO₂并非同一测量方式；运动、末梢灌注不足、肤色及设备性能等可影响准确性。",
       "keywords": [
+        "血氧饱和度",
+        "Oxygen saturation / SpO2",
+        "SpO2",
+        "血氧",
+        "血氧饱和度",
         "SpO2",
         "血氧"
       ],
       "sources": [
-        "copd",
-        "cardiac"
+        "fda_spo2"
       ]
     },
     {
@@ -2690,7 +2731,7 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "name": "慢性阻塞性肺疾病",
       "english": "Chronic obstructive pulmonary disease / COPD",
-      "definition": "以持续气流受限等为特征的慢性呼吸疾病。治疗可包括药物、风险管理及适宜的肺康复。",
+      "definition": "具有慢性呼吸道症状和持续气流受限的异质性肺部疾病。诊断需结合暴露史、症状及肺功能等检查；治疗可包括药物、危险因素管理和肺康复。",
       "keywords": [
         "COPD",
         "慢阻肺"
@@ -2720,7 +2761,7 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "name": "体位性低血压",
       "english": "Orthostatic hypotension",
-      "definition": "体位改变后血压明显下降的情况，可出现头晕或站立不稳。具体诊断需按标准测量。",
+      "definition": "从卧位转为站立或进行相应倾斜试验后出现符合诊断标准的血压下降，可伴头晕、视物模糊或晕厥。需按规范测量，站起头晕并不一定都是体位性低血压。",
       "keywords": [
         "起身头晕"
       ],
@@ -2732,11 +2773,15 @@ window.REHAB_DATA = {
     {
       "id": "t180",
       "category": "心肺与运动",
-      "name": "去适应",
-      "english": "Deconditioning",
-      "definition": "久卧或长时间活动减少造成体能等下降。重新活动需要兼顾疾病稳定性和逐步增加负荷。",
+      "name": "失适应综合征",
+      "english": "Physical deconditioning",
+      "definition": "长期卧床或活动减少后出现的肌力、心肺耐力及活动能力等下降。恢复活动应先评估疾病稳定性、负重限制和耐受能力，再逐步增加训练负荷。",
       "keywords": [
-        "体能下降"
+        "去适应",
+        "Deconditioning",
+        "体能下降",
+        "去适应",
+        "失用综合征"
       ],
       "sources": [
         "copd",
@@ -2793,7 +2838,7 @@ window.REHAB_DATA = {
       "category": "儿童老年与其他",
       "name": "脑性瘫痪",
       "english": "Cerebral palsy / CP",
-      "definition": "发育中脑损伤或异常相关的运动与姿势障碍。原始脑损伤不进行性加重，但功能问题可随成长改变。",
+      "definition": "发生于发育中的胎儿或婴幼儿脑部的非进行性损伤所致、持续存在的运动与姿势发育障碍，造成活动受限。原始脑损伤非进行性，但临床表现和继发肌肉骨骼问题可随生长变化。",
       "keywords": [
         "CP",
         "脑瘫"
@@ -2869,7 +2914,7 @@ window.REHAB_DATA = {
       "category": "儿童老年与其他",
       "name": "肌少症",
       "english": "Sarcopenia",
-      "definition": "肌肉力量、肌肉量及相关功能下降的一类状态。需要按适当标准评估，不仅是看起来瘦。",
+      "definition": "以骨骼肌量减少和肌力下降等为核心特征的疾病，诊断需按适用共识结合肌肉量、肌力和躯体功能进行评估。不能仅凭体重低或外观消瘦判断。",
       "keywords": [
         "少肌症"
       ],
@@ -3011,7 +3056,7 @@ window.REHAB_DATA = {
       "category": "儿童老年与其他",
       "name": "截肢",
       "english": "Amputation",
-      "definition": "肢体或部分结构被切除或缺失。康复可涉及残肢管理、活动能力和假肢适配等。",
+      "definition": "通过手术切除肢体全部或部分的医疗操作，可因创伤、血管疾病、肿瘤等实施。先天性肢体缺如与手术截肢并非同一概念；康复需结合残肢与整体功能。",
       "keywords": [
         "断肢"
       ],
@@ -3037,7 +3082,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "徒手肌力检查",
       "english": "Manual muscle testing / MMT",
-      "definition": "以动作表现和抗阻情况评估肌力的临床方法。常用分级是有序等级，不应把相邻等级视为等距。",
+      "definition": "通过标准体位、抗重力运动和徒手施加阻力评定肌力的方法，常用0至5级分级。分级属于有序等级，相邻等级差值不表示等量肌力变化。",
       "keywords": [
         "MMT",
         "肌力分级"
@@ -3051,7 +3096,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "Barthel指数",
       "english": "Barthel Index / BI",
-      "definition": "评估基本日常生活活动的量表。存在不同版本与计分范围，常见版本分数越高表示更独立。",
+      "definition": "评定基本日常生活活动独立程度的工具，涉及进食、个人卫生、穿衣、排泄控制、转移和移动等。存在不同计分版本，比较前需确认版本和施测条件，通常分数越高表示越独立。",
       "keywords": [
         "BI",
         "巴氏指数"
@@ -3078,12 +3123,12 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "功能独立性评定",
       "english": "Functional Independence Measure / FIM",
-      "definition": "评估运动与认知活动所需帮助程度的工具。分数反映特定任务表现，不等于全部生活质量。",
+      "definition": "评定日常活动中所需帮助程度的工具，含运动和认知相关项目。常用版本共18项，采用7级评分。结果反映特定活动的独立程度，不代表全部功能或生活质量。",
       "keywords": [
         "FIM"
       ],
       "sources": [
-        "measures"
+        "fim"
       ]
     },
     {
@@ -3091,13 +3136,13 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "Berg平衡量表",
       "english": "Berg Balance Scale / BBS",
-      "definition": "通过若干活动评估平衡表现的量表。风险解释需要结合人群和情境，不能单独预测是否会跌倒。",
+      "definition": "通过14项坐位、站立、转移和其他功能性平衡任务评定平衡能力的量表。需在保护条件下由合适人员施测；不能用单一分数断定个人一定会或不会跌倒。",
       "keywords": [
         "BBS",
         "Berg"
       ],
       "sources": [
-        "measures"
+        "berg"
       ]
     },
     {
@@ -3105,12 +3150,12 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "起立行走计时测试",
       "english": "Timed Up and Go / TUG",
-      "definition": "记录起立、走一段规定距离、转身返回坐下的时间。需要按标准条件执行并考虑辅助器具。",
+      "definition": "记录从椅子站起、行走3米、转身、返回并坐下所需时间的功能性活动测试。应记录辅助器具、帮助程度、步速要求及座椅条件，不宜跨测试条件直接比较。",
       "keywords": [
         "TUG"
       ],
       "sources": [
-        "measures"
+        "tug"
       ]
     },
     {
@@ -3131,7 +3176,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "六分钟步行测试",
       "english": "6-Minute Walk Test / 6MWT",
-      "definition": "按标准程序测量六分钟内步行距离，反映部分功能性运动能力。需要合适的监测和停止标准。",
+      "definition": "按标准程序测量受试者六分钟内步行距离，用于反映功能性运动能力，不能替代完整心肺运动试验。施测需考虑病情、监测与停止标准，不建议高风险者自行测试。",
       "keywords": [
         "6MWT"
       ],
@@ -3144,7 +3189,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "Fugl-Meyer评定",
       "english": "Fugl-Meyer Assessment / FMA",
-      "definition": "用于卒中后运动等功能评估的工具，含多个领域或分量表。应说明使用的部分和计分范围。",
+      "definition": "用于卒中后感觉运动功能等方面评定的工具，包含运动、感觉、平衡及关节活动和疼痛等领域。临床常单独使用运动分量表，报告时须说明具体分量表及计分范围。",
       "keywords": [
         "FMA"
       ],
@@ -3157,7 +3202,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "改良Ashworth量表",
       "english": "Modified Ashworth Scale / MAS",
-      "definition": "评估被动活动时阻力的等级工具。结果不仅可能受痉挛影响，不能当作纯粹的痉挛严重度测量。",
+      "definition": "按被动活动肢体时感受到的阻力进行等级评定的量表。阻力包含反射性与非反射性因素，不能将分数直接等同于痉挛这一神经机制的严重程度。",
       "keywords": [
         "MAS"
       ],
@@ -3170,7 +3215,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "Tardieu评定",
       "english": "Tardieu assessment",
-      "definition": "结合不同牵伸速度及反应角度等评估肌肉反应的方法，有助于理解动态与固定限制。",
+      "definition": "结合规定牵伸速度、肌肉反应和反应出现角度评定肌肉反应的方法。比较快速牵伸反应与慢速被动活动范围，有助于区分动态反射因素和固定软组织限制。",
       "keywords": [
         "Tardieu",
         "MTS"
@@ -3208,10 +3253,12 @@ window.REHAB_DATA = {
     {
       "id": "t214",
       "category": "评估与量表",
-      "name": "数字疼痛评分",
+      "name": "数字疼痛评分法",
       "english": "Numeric Rating Scale / NRS",
-      "definition": "用数字表达主观疼痛强度，常用0到10。它记录体验，不能据分数直接判断组织损伤程度。",
+      "definition": "用数字报告疼痛强度的单维度评分方法，常采用0至10分。分数不能单独说明疼痛机制、组织损伤程度或日常功能影响，复测时需使用相同说明和范围。",
       "keywords": [
+        "数字疼痛评分",
+        "Numeric Rating Scale / NRS",
         "NRS"
       ],
       "sources": [
@@ -3221,10 +3268,12 @@ window.REHAB_DATA = {
     {
       "id": "t215",
       "category": "评估与量表",
-      "name": "视觉模拟评分",
+      "name": "视觉模拟评分法",
       "english": "Visual Analogue Scale / VAS",
-      "definition": "在一条连续线段上标出主观体验程度的方法，常用于疼痛。使用时需说明两端含义与尺度。",
+      "definition": "在连续线段上标记疼痛等主观体验强度的评分方法，常用线段长度为100毫米。必须明确两端含义，不能把疼痛分数直接解释为组织损伤程度。",
       "keywords": [
+        "视觉模拟评分",
+        "Visual Analogue Scale / VAS",
         "VAS"
       ],
       "sources": [
@@ -3236,7 +3285,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "name": "功能性经口摄食量表",
       "english": "Functional Oral Intake Scale / FOIS",
-      "definition": "描述经口摄食水平的等级量表。反映摄食方式与限制，不直接等同于误吸风险。",
+      "definition": "描述日常经口摄食水平的7级量表，关注摄食途径、食物种类与所需限制或代偿。分级不等同于吞咽生理功能，也不能单独判定误吸风险。",
       "keywords": [
         "FOIS"
       ],
@@ -3247,14 +3296,20 @@ window.REHAB_DATA = {
     {
       "id": "t217",
       "category": "评估与量表",
-      "name": "渗入误吸量表",
+      "name": "渗透-误吸量表",
       "english": "Penetration-Aspiration Scale / PAS",
-      "definition": "依据物质进入气道的深度及清除反应评定的等级量表，通常结合吞咽仪器检查使用。",
+      "definition": "在吞咽仪器检查中，依据物质进入气道的深度及是否清除、是否出现保护反应，进行1至8级评定的量表。喉前庭侵入与误吸是不同层次，分数不能代替完整吞咽评估。",
       "keywords": [
+        "渗入误吸量表",
+        "Penetration-Aspiration Scale / PAS",
+        "PAS",
+        "穿透误吸量表",
+        "渗透误吸量表",
+        "喉渗入误吸量表",
         "PAS"
       ],
       "sources": [
-        "measures"
+        "dysphagia"
       ]
     },
     {
@@ -3274,15 +3329,19 @@ window.REHAB_DATA = {
     {
       "id": "t219",
       "category": "评估与量表",
-      "name": "脊髓损伤神经学分类",
-      "english": "ISNCSCI / AIS",
-      "definition": "按标准检查感觉、运动及相关保留情况进行脊髓损伤分类。损伤分级不直接等同于个人恢复结局。",
+      "name": "脊髓损伤神经学分类国际标准",
+      "english": "International Standards for Neurological Classification of Spinal Cord Injury / ISNCSCI",
+      "definition": "按标准感觉、运动和骶段保留情况检查，确定脊髓损伤神经平面与完整性的国际标准。AIS是其中使用的损伤分级体系，并不是ISNCSCI的同义名称；分级不能单独预测个人恢复。",
       "keywords": [
+        "脊髓损伤神经学分类",
+        "ISNCSCI / AIS",
         "ASIA",
-        "AIS"
+        "AIS",
+        "AIS",
+        "ASIA损伤分级"
       ],
       "sources": [
-        "measures"
+        "asia"
       ]
     },
     {
@@ -3453,7 +3512,7 @@ window.REHAB_DATA = {
       "category": "治疗与技术",
       "name": "限制诱导运动疗法",
       "english": "Constraint-induced movement therapy / CIMT",
-      "definition": "在符合条件的人群中，结合患侧任务练习及健侧使用限制的方法。并不适合所有瘫痪程度。",
+      "definition": "在符合条件的人群中，通过患侧高强度任务练习、健侧使用限制及促进日常应用的策略改善上肢使用的综合方法。存在不同改良方案，并非单纯绑住健侧，也不适合所有瘫痪程度。",
       "keywords": [
         "CIMT"
       ],
@@ -3555,10 +3614,12 @@ window.REHAB_DATA = {
     {
       "id": "t238",
       "category": "治疗与技术",
-      "name": "间歇性θ爆发刺激",
+      "name": "间歇性θ节律爆发式刺激",
       "english": "Intermittent theta-burst stimulation / iTBS",
-      "definition": "一种特定模式的重复经颅磁刺激。不是与其他刺激参数可以任意互换的方案。",
+      "definition": "重复经颅磁刺激的一种间歇性θ节律簇状刺激模式，属于特定的神经调控方案。刺激强度、时序和适应证需专业评估，不能与其他磁刺激方案直接互换。",
       "keywords": [
+        "间歇性θ爆发刺激",
+        "Intermittent theta-burst stimulation / iTBS",
         "iTBS",
         "θ爆发"
       ],
@@ -3606,7 +3667,7 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "question": "康复科主要看什么问题？",
       "answer": [
-        "康复医学关注疾病、损伤或手术后出现的功能与生活困难，例如活动、沟通或自理受限。服务包括查明功能问题、讨论目标，并选择训练、治疗、辅具或环境调整。是否适合康复科需结合具体情况。"
+        "康复医学科主要诊治疾病、损伤或手术等引起的功能障碍，包括运动、感觉、言语语言、吞咽、认知及日常生活活动受限等。通常先进行病史采集和康复评定，再制定目标，选择治疗、训练、辅助器具及环境调整等措施。具体接诊范围以医疗机构为准。"
       ],
       "keywords": [
         "康复科",
@@ -3615,7 +3676,8 @@ window.REHAB_DATA = {
         "挂号"
       ],
       "sources": [
-        "who"
+        "nhc_rehab",
+        "icf"
       ]
     },
     {
@@ -3640,7 +3702,7 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "question": "康复和按摩、机器理疗有什么区别？",
       "answer": [
-        "康复是围绕功能目标的综合服务，可能包括主动训练、日常活动练习、教育和辅具适配。按摩或物理因子只是部分方法，不能代表全部康复，也不能单靠接受某种机器治疗判断效果。"
+        "康复医疗是依据功能评定和康复目标制定的综合诊疗服务，可包括运动治疗、作业治疗、言语和吞咽治疗、物理因子治疗及辅助器具适配等。按摩或某一种仪器治疗只是可能采用的手段，不能代表完整康复方案，也不能仅凭使用设备判断疗效。"
       ],
       "keywords": [
         "按摩",
@@ -3649,7 +3711,8 @@ window.REHAB_DATA = {
         "区别"
       ],
       "sources": [
-        "pt"
+        "nhc_rehab",
+        "icf"
       ]
     },
     {
@@ -3657,7 +3720,7 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "question": "物理治疗和作业治疗有什么区别？",
       "answer": [
-        "物理治疗常关注运动、活动能力和相关症状；作业治疗围绕穿衣、工作等有意义的活动，考虑任务方法和环境。两者有交叉，目标与具体分工需要团队协作。"
+        "物理治疗通过运动治疗、手法和物理因子等改善运动与活动能力；作业治疗以自理、学习、工作等作业活动为目标，通过活动分析、训练以及辅助器具和环境调整改善任务完成。两者在功能训练上可以交叉，应围绕患者目标协作，不能简单按“练腿”和“练手”划分。"
       ],
       "keywords": [
         "PT",
@@ -3666,8 +3729,9 @@ window.REHAB_DATA = {
         "作业治疗"
       ],
       "sources": [
-        "ot",
-        "pt"
+        "nhc_rehab",
+        "pt",
+        "ot"
       ]
     },
     {
@@ -3709,7 +3773,7 @@ window.REHAB_DATA = {
       "category": "基础康复",
       "question": "为什么要先做评估再训练？",
       "answer": [
-        "评估帮助区分困难来自力量、感觉、疼痛、认知还是环境等因素，并识别活动限制与风险。相似的表面表现可能需要不同处理，先明确问题才能选择合适目标和方法。"
+        "康复评定用于明确身体功能与结构受损、活动受限和参与局限，分析肌力、感觉、疼痛、认知及环境等因素，并识别风险。相似的活动困难可能有不同原因，需要先明确问题再选择干预。"
       ],
       "keywords": [
         "评估",
@@ -3718,7 +3782,8 @@ window.REHAB_DATA = {
         "先做"
       ],
       "sources": [
-        "who"
+        "nhc_rehab",
+        "icf"
       ]
     },
     {
@@ -3777,7 +3842,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "手脚僵硬就是肌力恢复了吗？",
       "answer": [
-        "不是。肌张力、痉挛、软组织僵硬与主动产生力量是不同问题。被动移动时阻力大，不代表能更好地主动完成动作，需分别评估。"
+        "不是。肌力是主动产生力量的能力；肌张力与被动活动时的阻力有关。卒中后僵硬可能涉及痉挛、关节挛缩、疼痛或软组织改变。被动阻力增大不能说明主动运动功能已经改善，需分别评定。"
       ],
       "keywords": [
         "僵硬",
@@ -3794,7 +3859,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "痉挛和关节挛缩是一回事吗？",
       "answer": [
-        "不是。痉挛典型涉及速度相关的被动牵伸反应；挛缩是软组织等变化导致较固定的活动受限。两者可同时存在，处理也可能不同。"
+        "不是。痉挛以速度依赖性的牵张反射增强为特征；关节挛缩主要表现为组织缩短等造成的持续被动活动范围受限。两者可同时存在，需要区分反射性与结构性限制，再选择干预。"
       ],
       "keywords": [
         "痉挛",
@@ -3941,7 +4006,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "转移和步行有什么不同？",
       "answer": [
-        "转移是床、椅、轮椅或厕所之间的位置转换，步行是连续行走。两者都需评估，但需要的动作、环境和帮助方式不同。"
+        "转移是身体从一个支撑面或位置移至另一个，例如床与轮椅之间或坐上坐便器；步行是以连续迈步实现移动。转移能力与步行能力应分别评定，协助方式还需考虑负重限制、环境和安全。"
       ],
       "keywords": [
         "床椅",
@@ -4005,7 +4070,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "支具和假肢有什么区别？",
       "answer": [
-        "支具支持或调整仍存在的身体部位；假肢替代缺失的肢体或部分结构。两者都需适配、训练和皮肤观察，不是买来就能正确使用。"
+        "矫形器也常称支具，是外加于身体、用于支持、保护或调整神经肌肉骨骼系统结构和功能的装置；假肢用于替代缺失肢体的全部或部分。两者均需要评估、适配、使用训练和皮肤观察。"
       ],
       "keywords": [
         "支具",
@@ -4038,12 +4103,13 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "为什么长期坐着也可能发生压疮？",
       "answer": [
-        "持续压力和剪切可能损伤皮肤与深部组织，风险还与感觉、活动和营养有关。坐垫只能解决部分问题，仍需要合适坐姿、皮肤管理及个体化减压安排。"
+        "持续压力或压力合并剪切力可造成局部皮肤及深部组织损伤，规范名称为压力性损伤，旧称压疮。久坐、感觉减退、活动受限和营养问题等会增加风险；预防需结合坐姿、皮肤检查、合适坐垫及个体化减压安排。"
       ],
       "keywords": [
         "褥疮",
         "压疮",
-        "坐垫"
+        "坐垫",
+        "压力性损伤"
       ],
       "sources": [
         "who"
@@ -4070,7 +4136,7 @@ window.REHAB_DATA = {
       "category": "言语与沟通",
       "question": "失语和口齿不清有什么区别？",
       "answer": [
-        "失语涉及语言的表达或理解，也可能影响读写；构音障碍涉及说话肌肉的运动控制。两者可同时存在，但训练目标和支持方式不同。"
+        "失语症是脑损伤引起的获得性语言障碍，可影响理解、表达、阅读和书写。构音障碍是神经损伤引起的言语运动控制异常，可影响呼吸、发声、共鸣、构音和韵律。日常所说“口齿不清”还可能有其他原因；两类障碍也可并存。"
       ],
       "keywords": [
         "失语",
@@ -4152,7 +4218,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "喝水呛是吞咽障碍吗？",
       "answer": [
-        "喝水呛可能提示吞咽问题，但仅凭这一个表现不能确定机制和严重程度。反复发生或伴进食后声音变化、饮食减少等情况时，需要吞咽相关评估。"
+        "饮水时呛咳可能提示吞咽障碍或气道保护问题，但不能单凭呛咳判断是否误吸、障碍机制及严重程度。反复出现，或伴进食后湿性嗓音、摄入减少等情况，应接受吞咽相关评估；不要自行用反复饮水试验来确认安全。"
       ],
       "keywords": [
         "喝水呛",
@@ -4160,7 +4226,8 @@ window.REHAB_DATA = {
         "吞咽"
       ],
       "sources": [
-        "dysphagia"
+        "dysphagia",
+        "asha_vfss"
       ]
     },
     {
@@ -4168,7 +4235,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "不呛咳就说明吞咽安全吗？",
       "answer": [
-        "不是。部分误吸没有明显咳嗽，称为隐性误吸。吞咽安全还要考虑病因、整体表现及必要的仪器评估。"
+        "不能。食物、液体或分泌物进入声带平面以下气道称为误吸，部分误吸没有明显咳嗽，称为隐性误吸。床旁观察不能完全排除误吸，必要时由专业团队选择吞咽造影或内镜检查。"
       ],
       "keywords": [
         "不呛",
@@ -4176,7 +4243,8 @@ window.REHAB_DATA = {
         "安全"
       ],
       "sources": [
-        "dysphagia"
+        "dysphagia",
+        "asha_vfss"
       ]
     },
     {
@@ -4200,7 +4268,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "吞咽造影和吞咽内镜是同一检查吗？",
       "answer": [
-        "不是。吞咽造影利用动态X线观察食团转运；吞咽内镜主要观察咽喉、分泌物及相关表现。二者提供的信息不同，选择取决于需要回答的临床问题。"
+        "不是。视频透视吞咽检查（VFSS）用动态X线观察含造影剂食团的转运；纤维内镜吞咽功能检查（FEES）经鼻观察咽喉、分泌物、残留及气道保护相关表现。两者观察范围和局限不同，可相互补充，选择取决于临床问题。"
       ],
       "keywords": [
         "VFSS",
@@ -4208,6 +4276,7 @@ window.REHAB_DATA = {
         "检查"
       ],
       "sources": [
+        "asha_vfss",
         "dysphagia"
       ]
     },
@@ -4397,7 +4466,7 @@ window.REHAB_DATA = {
       "category": "骨关节与疼痛",
       "question": "肩周炎和肩袖损伤一样吗？",
       "answer": [
-        "不是。冻结肩常有主动、被动活动范围受限；肩袖问题涉及相关肌肉肌腱。肩痛还可能有其他原因，不能仅凭疼痛部位区分。"
+        "不是。“肩周炎”在日常使用中可能泛指不同肩痛问题，不能直接当作精确诊断。冻结肩以肩部疼痛及主动、被动活动范围受限为主要表现；肩袖损伤涉及肩袖肌腱等结构。需结合病史与检查鉴别，不能仅按疼痛部位区分。"
       ],
       "keywords": [
         "肩周炎",
@@ -4624,7 +4693,7 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "question": "血氧读数正常就说明呼吸没问题吗？",
       "answer": [
-        "不能。血氧仪只提供部分信息，读数受设备与测量条件影响。症状、呼吸表现和疾病状态仍需考虑，严重不适时不应因读数正常而延误就医。"
+        "不能。脉搏血氧仪显示的SpO₂是对动脉血氧饱和度的无创估计，不直接测量通气量或二氧化碳水平。设备、末梢灌注、运动和其他测量因素可能影响读数；明显呼吸困难或意识变化时不能因读数正常而延误就医。"
       ],
       "keywords": [
         "血氧",
@@ -4632,7 +4701,7 @@ window.REHAB_DATA = {
         "正常"
       ],
       "sources": [
-        "copd"
+        "fda_spo2"
       ]
     },
     {
@@ -5041,7 +5110,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "question": "肌张力是什么意思？",
       "answer": [
-        "肌肉在静息时的张力及被动活动时表现的阻力。张力高不代表力量强，需要区分神经与软组织因素。"
+        "临床上常通过肌肉在静息状态下的紧张程度以及被动活动时的阻力进行评估。被动阻力受神经调节和肌肉、肌腱等组织特性共同影响，不能将肌张力增高等同于肌力增强。"
       ],
       "keywords": [
         "肌张力",
@@ -5224,7 +5293,7 @@ window.REHAB_DATA = {
       "category": "运动功能",
       "question": "足下垂是什么意思？",
       "answer": [
-        "抬起前脚掌的能力不足，走路时可能拖地。可由不同神经或肌肉问题引起，需评估原因。"
+        "踝关节主动背屈不足，导致足尖在步行摆动期难以离地的表现。可与周围神经病变或中枢神经损伤等有关；拖脚也可能由髋、膝控制等其他问题造成。"
       ],
       "keywords": [
         "足下垂",
@@ -5243,7 +5312,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "偏瘫是什么意思？",
       "answer": [
-        "身体一侧出现严重的运动能力丧失。常与脑损伤有关，具体涉及哪些部位和功能因人而异。"
+        "身体一侧肢体随意运动功能丧失的表现，常见于对侧大脑半球等部位损伤。临床还需记录残存运动、肌力、肌张力和伴随障碍，不能仅以是否能行走判断。"
       ],
       "keywords": [
         "偏瘫",
@@ -5260,14 +5329,18 @@ window.REHAB_DATA = {
     {
       "id": "q100",
       "category": "神经康复",
-      "question": "轻偏瘫是什么意思？",
+      "question": "不完全性偏瘫是什么意思？",
       "answer": [
-        "身体一侧力量或运动控制减弱，仍保留部分活动能力。不能仅凭是否能走路判断程度。"
+        "身体一侧肢体肌力减弱或部分运动功能受损，仍保留一定随意运动。与完全运动丧失不同，但并不意味着总体病情轻，也不能只按是否能走路判断。"
       ],
       "keywords": [
+        "不完全性偏瘫",
+        "Hemiparesis",
         "轻偏瘫",
         "Hemiparesis",
-        "半边无力"
+        "半边无力",
+        "偏侧无力",
+        "轻偏瘫"
       ],
       "sources": [
         "stroke",
@@ -5281,7 +5354,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "截瘫是什么意思？",
       "answer": [
-        "双下肢及相关躯干功能受到影响的瘫痪状态，常见于脊髓损伤，受损范围与病变位置有关。"
+        "脊髓损伤语境中，胸、腰或骶段神经组织损伤导致双下肢运动和／或感觉功能受损，上肢功能保留。躯干及盆腔脏器功能也可能受影响，范围取决于神经损伤平面和完整性。"
       ],
       "keywords": [
         "截瘫",
@@ -5289,9 +5362,7 @@ window.REHAB_DATA = {
         "双腿瘫痪"
       ],
       "sources": [
-        "stroke",
-        "sci",
-        "neuro"
+        "asia"
       ],
       "termId": "t047"
     },
@@ -5300,7 +5371,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "四肢瘫是什么意思？",
       "answer": [
-        "上肢、下肢及躯干等功能均受影响的瘫痪状态，常与颈段脊髓损伤相关。"
+        "脊髓损伤语境中，颈段神经组织损伤导致双上肢、躯干、双下肢及盆腔器官相关运动和／或感觉功能受损。不同损伤平面与完整性下，保留功能差异很大。"
       ],
       "keywords": [
         "四肢瘫",
@@ -5308,9 +5379,7 @@ window.REHAB_DATA = {
         "四肢不能动"
       ],
       "sources": [
-        "stroke",
-        "sci",
-        "neuro"
+        "asia"
       ],
       "termId": "t048"
     },
@@ -5413,7 +5482,7 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "question": "失用是什么意思？",
       "answer": [
-        "不能用基础肌力或理解障碍完全解释的熟练动作执行困难。具体类型需通过专业评估判断。"
+        "已经习得的、有目的动作的计划或执行受损，且不能用肌无力、感觉缺失、共济失调或指令理解困难等充分解释。应结合动作类型与神经心理评估判断。"
       ],
       "keywords": [
         "失用",
@@ -5432,7 +5501,7 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "日常生活活动是什么意思？",
       "answer": [
-        "维持基本生活的活动，如进食、穿衣、如厕。评估需说明是否独立、是否使用器具及需要多少帮助。"
+        "个人维持日常生活所需的活动。临床常将进食、穿衣、洗漱、如厕及转移等归入基本日常生活活动；应记录独立程度、辅助器具和所需帮助。"
       ],
       "keywords": [
         "日常生活活动",
@@ -5451,11 +5520,11 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "工具性日常生活活动是什么意思？",
       "answer": [
-        "较复杂的独立生活活动，如购物、做饭和管理事务。基本自理良好不代表这些活动均无困难。"
+        "支持独立居家与社区生活的较复杂活动，如购物、备餐、使用交通工具和管理药物或财务。与基本自理活动相比，更依赖认知、组织能力和环境支持。"
       ],
       "keywords": [
         "工具性日常生活活动",
-        "Instrumental ADL / IADL",
+        "Instrumental activities of daily living / IADL",
         "IADL"
       ],
       "sources": [
@@ -5469,11 +5538,13 @@ window.REHAB_DATA = {
       "category": "日常活动与辅具",
       "question": "压力性损伤是什么意思？",
       "answer": [
-        "压力或压力与剪切共同作用导致的皮肤和深部组织损伤。风险与活动、感觉、营养及皮肤状况有关。"
+        "压力或压力合并剪切力所致的皮肤及／或深部软组织局部损伤，常发生于骨隆突或医疗器械接触部位。可在皮肤完整时出现，并非必须已经破溃；旧称压疮。"
       ],
       "keywords": [
         "压力性损伤",
         "Pressure injury",
+        "压疮",
+        "褥疮",
         "压疮",
         "褥疮"
       ],
@@ -5486,11 +5557,13 @@ window.REHAB_DATA = {
     {
       "id": "q112",
       "category": "日常活动与辅具",
-      "question": "节能策略是什么意思？",
+      "question": "能量保存策略是什么意思？",
       "answer": [
-        "通过安排任务、休息和改变活动方式管理体力消耗。不是长期停止活动，而是提高活动的可持续性。"
+        "通过任务分解、活动节奏安排、交替活动与休息、简化动作及使用辅助器具等方式，降低日常活动的能量需求，帮助管理疲劳。不是长期停止活动。"
       ],
       "keywords": [
+        "能量保存策略",
+        "Energy conservation",
         "节能策略",
         "Energy conservation",
         "省力",
@@ -5505,18 +5578,19 @@ window.REHAB_DATA = {
     {
       "id": "q113",
       "category": "言语与沟通",
-      "question": "言语失用是什么意思？",
+      "question": "言语失用症是什么意思？",
       "answer": [
-        "言语动作计划或编程受到影响，发音可能费力或出现不一致错误。不能仅由肌无力解释。"
+        "脑损伤后言语动作计划或编程受损，影响语音动作的组织与排序。发音可费力或出现错误，不能仅用肌无力或构音器官结构异常解释，可与失语症或构音障碍并存。"
       ],
       "keywords": [
+        "言语失用症",
+        "Apraxia of speech / AOS",
         "言语失用",
         "Apraxia of speech / AOS",
         "AOS"
       ],
       "sources": [
-        "aphasia",
-        "dysarthria"
+        "asha_aos"
       ],
       "termId": "t103"
     },
@@ -5543,17 +5617,19 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "喉前庭侵入是什么意思？",
       "answer": [
-        "物质进入喉部气道但未越过声带，和声带以下的误吸不同。需通过合适检查识别。"
+        "食物、液体或分泌物进入喉前庭，但未越过真声带平面。与进入声带以下气道的误吸不同，通常需借助吞咽造影或内镜检查识别。"
       ],
       "keywords": [
         "喉前庭侵入",
         "Laryngeal penetration",
         "渗入",
-        "喉侵入"
+        "喉侵入",
+        "喉渗透",
+        "喉渗入"
       ],
       "sources": [
         "dysphagia",
-        "nutrition"
+        "asha_vfss"
       ],
       "termId": "t127"
     },
@@ -5580,7 +5656,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "IDDSI框架是什么意思？",
       "answer": [
-        "描述食物质地和液体稠度的标准化框架。等级是特性分类，不是病情严重度或疗效评分。"
+        "国际吞咽障碍饮食标准化倡议提出的食物质地与液体稠度分类及测试框架，共设0至7级，其中液体与食物的适用等级范围不同。分级不是患者病情或疗效评分，需按标准方法测试。"
       ],
       "keywords": [
         "IDDSI框架",
@@ -5597,7 +5673,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "question": "肠内营养是什么意思？",
       "answer": [
-        "经胃肠道提供营养，可包括通过管道输送。是否适用与方式需由医疗团队决定。"
+        "经胃肠道提供营养支持的方式，临床可采用口服营养补充或管饲，具体用法取决于所采用的临床定义与方案。鼻胃管、胃造瘘等管饲路径应由医疗团队评估选择。"
       ],
       "keywords": [
         "肠内营养",
@@ -5669,7 +5745,7 @@ window.REHAB_DATA = {
       "category": "认知与心理",
       "question": "病识感是什么意思？",
       "answer": [
-        "认识自身困难及其影响的能力。病识感不足可能影响安全和康复参与。"
+        "在神经康复中常指患者对自身功能障碍及其影响的认识，又称缺损意识。认识受损可影响安全判断与康复参与；不能仅据拒绝训练判断为缺乏病识感。"
       ],
       "keywords": [
         "病识感",
@@ -5742,7 +5818,7 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "question": "体位性低血压是什么意思？",
       "answer": [
-        "体位改变后血压明显下降的情况，可出现头晕或站立不稳。具体诊断需按标准测量。"
+        "从卧位转为站立或进行相应倾斜试验后出现符合诊断标准的血压下降，可伴头晕、视物模糊或晕厥。需按规范测量，站起头晕并不一定都是体位性低血压。"
       ],
       "keywords": [
         "体位性低血压",
@@ -5779,7 +5855,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "Barthel指数是什么意思？",
       "answer": [
-        "评估基本日常生活活动的量表。存在不同版本与计分范围，常见版本分数越高表示更独立。"
+        "评定基本日常生活活动独立程度的工具，涉及进食、个人卫生、穿衣、排泄控制、转移和移动等。存在不同计分版本，比较前需确认版本和施测条件，通常分数越高表示越独立。"
       ],
       "keywords": [
         "Barthel指数",
@@ -5797,7 +5873,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "功能独立性评定是什么意思？",
       "answer": [
-        "评估运动与认知活动所需帮助程度的工具。分数反映特定任务表现，不等于全部生活质量。"
+        "评定日常活动中所需帮助程度的工具，含运动和认知相关项目。常用版本共18项，采用7级评分。结果反映特定活动的独立程度，不代表全部功能或生活质量。"
       ],
       "keywords": [
         "功能独立性评定",
@@ -5805,7 +5881,7 @@ window.REHAB_DATA = {
         "FIM"
       ],
       "sources": [
-        "measures"
+        "fim"
       ],
       "termId": "t204"
     },
@@ -5814,7 +5890,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "Berg平衡量表是什么意思？",
       "answer": [
-        "通过若干活动评估平衡表现的量表。风险解释需要结合人群和情境，不能单独预测是否会跌倒。"
+        "通过14项坐位、站立、转移和其他功能性平衡任务评定平衡能力的量表。需在保护条件下由合适人员施测；不能用单一分数断定个人一定会或不会跌倒。"
       ],
       "keywords": [
         "Berg平衡量表",
@@ -5823,7 +5899,7 @@ window.REHAB_DATA = {
         "Berg"
       ],
       "sources": [
-        "measures"
+        "berg"
       ],
       "termId": "t205"
     },
@@ -5832,7 +5908,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "起立行走计时测试是什么意思？",
       "answer": [
-        "记录起立、走一段规定距离、转身返回坐下的时间。需要按标准条件执行并考虑辅助器具。"
+        "记录从椅子站起、行走3米、转身、返回并坐下所需时间的功能性活动测试。应记录辅助器具、帮助程度、步速要求及座椅条件，不宜跨测试条件直接比较。"
       ],
       "keywords": [
         "起立行走计时测试",
@@ -5840,7 +5916,7 @@ window.REHAB_DATA = {
         "TUG"
       ],
       "sources": [
-        "measures"
+        "tug"
       ],
       "termId": "t206"
     },
@@ -5849,7 +5925,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "六分钟步行测试是什么意思？",
       "answer": [
-        "按标准程序测量六分钟内步行距离，反映部分功能性运动能力。需要合适的监测和停止标准。"
+        "按标准程序测量受试者六分钟内步行距离，用于反映功能性运动能力，不能替代完整心肺运动试验。施测需考虑病情、监测与停止标准，不建议高风险者自行测试。"
       ],
       "keywords": [
         "六分钟步行测试",
@@ -5866,7 +5942,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "Fugl-Meyer评定是什么意思？",
       "answer": [
-        "用于卒中后运动等功能评估的工具，含多个领域或分量表。应说明使用的部分和计分范围。"
+        "用于卒中后感觉运动功能等方面评定的工具，包含运动、感觉、平衡及关节活动和疼痛等领域。临床常单独使用运动分量表，报告时须说明具体分量表及计分范围。"
       ],
       "keywords": [
         "Fugl-Meyer评定",
@@ -5883,7 +5959,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "改良Ashworth量表是什么意思？",
       "answer": [
-        "评估被动活动时阻力的等级工具。结果不仅可能受痉挛影响，不能当作纯粹的痉挛严重度测量。"
+        "按被动活动肢体时感受到的阻力进行等级评定的量表。阻力包含反射性与非反射性因素，不能将分数直接等同于痉挛这一神经机制的严重程度。"
       ],
       "keywords": [
         "改良Ashworth量表",
@@ -5900,7 +5976,7 @@ window.REHAB_DATA = {
       "category": "评估与量表",
       "question": "功能性经口摄食量表是什么意思？",
       "answer": [
-        "描述经口摄食水平的等级量表。反映摄食方式与限制，不直接等同于误吸风险。"
+        "描述日常经口摄食水平的7级量表，关注摄食途径、食物种类与所需限制或代偿。分级不等同于吞咽生理功能，也不能单独判定误吸风险。"
       ],
       "keywords": [
         "功能性经口摄食量表",
@@ -5915,17 +5991,23 @@ window.REHAB_DATA = {
     {
       "id": "q136",
       "category": "评估与量表",
-      "question": "渗入误吸量表是什么意思？",
+      "question": "渗透-误吸量表是什么意思？",
       "answer": [
-        "依据物质进入气道的深度及清除反应评定的等级量表，通常结合吞咽仪器检查使用。"
+        "在吞咽仪器检查中，依据物质进入气道的深度及是否清除、是否出现保护反应，进行1至8级评定的量表。喉前庭侵入与误吸是不同层次，分数不能代替完整吞咽评估。"
       ],
       "keywords": [
+        "渗透-误吸量表",
+        "Penetration-Aspiration Scale / PAS",
         "渗入误吸量表",
         "Penetration-Aspiration Scale / PAS",
+        "PAS",
+        "穿透误吸量表",
+        "渗透误吸量表",
+        "喉渗入误吸量表",
         "PAS"
       ],
       "sources": [
-        "measures"
+        "dysphagia"
       ],
       "termId": "t217"
     },
@@ -5953,7 +6035,7 @@ window.REHAB_DATA = {
       "category": "治疗与技术",
       "question": "限制诱导运动疗法是什么意思？",
       "answer": [
-        "在符合条件的人群中，结合患侧任务练习及健侧使用限制的方法。并不适合所有瘫痪程度。"
+        "在符合条件的人群中，通过患侧高强度任务练习、健侧使用限制及促进日常应用的策略改善上肢使用的综合方法。存在不同改良方案，并非单纯绑住健侧，也不适合所有瘫痪程度。"
       ],
       "keywords": [
         "限制诱导运动疗法",
