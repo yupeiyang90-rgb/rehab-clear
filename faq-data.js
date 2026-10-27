@@ -1,6 +1,6 @@
 window.REHAB_DATA = {
-  "version": "3.1",
-  "updated": "2026-10-25",
+  "version": "3.2",
+  "updated": "2026-10-27",
   "sources": {
     "who": {
       "title": "WHO：康复概况",
@@ -161,6 +161,18 @@ window.REHAB_DATA = {
     "fim": {
       "title": "Shirley Ryan AbilityLab：功能独立性评定",
       "url": "https://www.sralab.org/rehabilitation-measures/functional-independence-measure"
+    },
+    "deconditioning": {
+      "title": "Shirley Ryan AbilityLab：活动减少与去适应",
+      "url": "https://www.sralab.org/lifecenter/resources/physical-deconditioning"
+    },
+    "parkinson": {
+      "title": "NINDS：帕金森病的运动与非运动表现",
+      "url": "https://www.ninds.nih.gov/current-research/focus-disorders/parkinsons-disease-research/parkinsons-disease-challenges-progress-and-promise"
+    },
+    "heart_failure": {
+      "title": "美国心脏协会：心力衰竭类型与表现",
+      "url": "https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure"
     }
   },
   "categories": [
@@ -989,15 +1001,13 @@ window.REHAB_DATA = {
       "category": "神经康复",
       "name": "帕金森病",
       "english": "Parkinson disease / PD",
-      "definition": "一种神经退行性疾病，可出现运动迟缓、僵硬、震颤及非运动症状。康复目标需结合综合治疗。",
+      "definition": "一种进行性神经退行性疾病，运动表现可包括运动迟缓、肌强直、静止性震颤及姿势平衡障碍，也可伴非运动症状。个体表现存在差异，康复目标需结合综合治疗。",
       "keywords": [
         "PD",
         "帕金森"
       ],
       "sources": [
-        "stroke",
-        "sci",
-        "neuro"
+        "parkinson"
       ]
     },
     {
@@ -2076,7 +2086,7 @@ window.REHAB_DATA = {
       "category": "吞咽与营养",
       "name": "视频透视吞咽检查",
       "english": "Videofluoroscopic swallowing study / VFSS",
-      "definition": "又称视频透视吞咽检查，使用动态X线观察含造影剂食团在口腔、咽部及可见食管段的转运，评估吞咽生理、残留及气道侵入情况，并可检验适当的代偿策略。",
+      "definition": "使用动态X线观察含造影剂食团在口腔、咽部及上段食管的转运，评估吞咽生理、残留及气道侵入情况，并可检验适当的代偿策略。",
       "keywords": [
         "吞咽造影检查",
         "Videofluoroscopic swallow study / VFSS",
@@ -2746,14 +2756,13 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "name": "心力衰竭",
       "english": "Heart failure / HF",
-      "definition": "心脏功能异常造成血液供应或充盈不能满足身体需要的临床综合征。活动安排需结合稳定程度。",
+      "definition": "心脏结构或功能异常引起的临床综合征，可因心室充盈或射血能力受损，出现呼吸困难、乏力及液体潴留等表现。康复活动需结合病情稳定性与医学评估安排。",
       "keywords": [
         "HF",
         "心衰"
       ],
       "sources": [
-        "copd",
-        "cardiac"
+        "heart_failure"
       ]
     },
     {
@@ -2773,19 +2782,19 @@ window.REHAB_DATA = {
     {
       "id": "t180",
       "category": "心肺与运动",
-      "name": "失适应综合征",
+      "name": "去适应综合征",
       "english": "Physical deconditioning",
-      "definition": "长期卧床或活动减少后出现的肌力、心肺耐力及活动能力等下降。恢复活动应先评估疾病稳定性、负重限制和耐受能力，再逐步增加训练负荷。",
+      "definition": "长期卧床、制动或活动减少所致的多系统功能下降，可表现为肌力、心肺耐力及日常活动能力下降。恢复活动前需评估原发病稳定性、负重限制及耐受能力，再逐步增加活动负荷。",
       "keywords": [
+        "失适应综合征",
         "去适应",
         "Deconditioning",
         "体能下降",
-        "去适应",
+        "废用综合征",
         "失用综合征"
       ],
       "sources": [
-        "copd",
-        "cardiac"
+        "deconditioning"
       ]
     },
     {
@@ -4709,16 +4718,17 @@ window.REHAB_DATA = {
       "category": "心肺与运动",
       "question": "长期卧床后为什么稍动就累？",
       "answer": [
-        "活动减少可导致体能、肌肉和循环适应下降，但气短或疲劳也可能有疾病原因。恢复活动需先了解稳定性，再逐步安排，不直接套用他人的运动量。"
+        "长期卧床或活动减少可引起去适应，表现为肌力、心肺耐力及活动能力下降。但气短或疲劳也可能与原发疾病或其他问题有关，不能仅凭这些表现作出判断。恢复活动需先评估病情稳定性及活动限制，再逐步安排，不直接套用他人的运动量。"
       ],
       "keywords": [
         "卧床",
         "体能",
         "去适应",
+        "失适应综合征",
         "累"
       ],
       "sources": [
-        "pt"
+        "deconditioning"
       ]
     },
     {
