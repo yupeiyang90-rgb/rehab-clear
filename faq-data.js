@@ -209,6 +209,10 @@ window.REHAB_DATA = {
     "pressure_injury": {
       "title": "NHS：压力性损伤（压疮）",
       "url": "https://www.nhs.uk/conditions/pressure-sores/"
+    },
+    "postural_hypotension": {
+      "title": "NHS：低血压与起身后头晕",
+      "url": "https://www.nhs.uk/conditions/low-blood-pressure-hypotension/"
     }
   },
   "categories": [
@@ -2803,8 +2807,7 @@ window.REHAB_DATA = {
         "站起来头晕"
       ],
       "sources": [
-        "copd",
-        "cardiac"
+        "postural_hypotension"
       ]
     },
     {
@@ -5857,8 +5860,7 @@ window.REHAB_DATA = {
         "站起来头晕"
       ],
       "sources": [
-        "copd",
-        "cardiac"
+        "postural_hypotension"
       ],
       "termId": "t179"
     },
