@@ -10,15 +10,15 @@ const termNamesById=new Map(terms.map(t=>[t.id,t.name]));
 const queryIntents=[
   {pattern:/(吃|喝|饮|进食|口水).{0,6}呛|呛.{0,6}(吃|喝|水)/,questions:['q034','q035'],terms:['吞咽障碍','误吸']},
   {pattern:/扣.{0,4}(不|难).{0,4}扣子|扣不上|扣不了|扣纽扣困难/,questions:['q015'],terms:['穿衣能力','作业治疗']},
-  {pattern:/脚.{0,4}拖|拖.{0,3}脚|脚尖.{0,4}(碰地|抬不|拖地)/,questions:['q016'],terms:['足下垂']},
-  {pattern:/(扶|帮|拉).{0,5}(起床|起身)|拽.{0,5}(胳膊|手臂)/,questions:['q022','q021'],terms:['床上活动','转移']},
+  {pattern:/脚.{0,4}拖|拖.{0,3}脚|脚尖.{0,4}(碰地|抬不|拖地)/,questions:[],terms:['足下垂']},
+  {pattern:/(扶|帮|拉).{0,5}(起床|起身)|拽.{0,5}(胳膊|手臂)/,questions:['q022'],terms:['床上活动','转移']},
   {pattern:/(站|起身|起来).{0,7}(发黑|头晕|晕)|眼前.{0,3}黑/,questions:[],terms:['体位性低血压']},
-  {pattern:/(手|脚|胳膊|腿).{0,5}(发紧|发硬|僵硬)/,questions:['q011','q012'],terms:['肌张力','痉挛']},
+  {pattern:/(手|脚|胳膊|腿).{0,5}(发紧|发硬|僵硬)/,questions:[],terms:['肌张力','痉挛']},
   {pattern:/(走路|走着|行走).{0,5}(摔|不稳|绊)|经常摔|反复摔/,questions:['q018','q067'],terms:['跌倒风险','动态平衡']},
   {pattern:/(一边|半边|一侧).{0,5}(使不上劲|没力|无力)/,questions:[],terms:['不完全性偏瘫','偏瘫']},
   {pattern:/说.{0,4}不清|口齿.{0,3}不清/,questions:['q029','q028'],terms:['构音障碍','失语症']},
   {pattern:/(卧床|躺).{0,7}(累|没力|乏力)/,questions:['q064'],terms:['去适应综合征']},
-  {pattern:/从床.{0,6}(轮椅|椅子)|床.{0,5}挪/,questions:['q021'],terms:['转移']},
+  {pattern:/从床.{0,6}(轮椅|椅子)|床.{0,5}挪/,questions:[],terms:['转移']},
   {pattern:/突然.{0,12}(无力|没力|没劲|使不上劲|嘴歪|说不清|说话不清)/,questions:['q010'],terms:['卒中'],priority:500}
 ];
 function matchScore(item,query){
